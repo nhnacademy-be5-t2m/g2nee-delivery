@@ -1,13 +1,12 @@
 package com.t2m.g2nee.delivery;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class TestController {
-    @GetMapping("/test")
-    public String hello(){
-
-        return "hello";
+    @GetMapping("/test-controller")
+    public String Test(){
+        return "index";
     }
 }
