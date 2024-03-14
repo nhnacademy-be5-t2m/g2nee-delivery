@@ -39,7 +39,7 @@ jobs:
 
       - name: Check if files exist in target directory
         run: |
-          if [ -z "$(ls -A target/delivery-0.0.1-SNAPSHOT.jar 2>/dev/null)" ]; then
+          if [ -e "target/delivery-0.0.1-SNAPSHOT.jar" ]; then
             rm target/delivery-0.0.1-SNAPSHOT.jar
           fi
 
